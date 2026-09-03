@@ -1,0 +1,13 @@
+# Site settings
+title: liuzhenhua
+description: >-
+  You Shaper = Philosophy + Art + Architect — personal site of jangels.
+url: "https://jangels.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins (GitHub Pages whitelisted)
+plugins:
+  - jekyll-feed
