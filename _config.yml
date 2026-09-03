@@ -1,13 +1,14 @@
 # Site settings
 title: liuzhenhua
-description: >-
-  You Shaper = Philosophy + Art + Architect — personal site of jangels.
+description: "You Shaper = Philosophy + Art + Architect — personal site of jangels."
 url: "https://jangels.github.io"
 
-# Build settings
+# Build settings: plain Jekyll, no external theme gem / no plugins.
+# This guarantees a successful GitHub Pages build (Jekyll 3.10 on their side).
 markdown: kramdown
-theme: minima
 
-# Plugins (GitHub Pages whitelisted)
-plugins:
-  - jekyll-feed
+# Don't publish the repo README / Gemfile as site pages.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

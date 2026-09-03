@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="intro">
+  {{ content }}
+</section>
+
+<section class="posts">
+  <h2>Posts</h2>
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No posts yet — stay tuned.</p>
+  {% endif %}
+</section>
