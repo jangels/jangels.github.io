@@ -6,7 +6,7 @@
   --accent-light: #d99e7a;
   --line: #e3ded5;
   --card: #fffdf9;
-  --max: 760px;
+  --max: 900px;
   --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   --serif: "Noto Serif SC", "Songti SC", "STSong", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
@@ -143,7 +143,7 @@ article.post, article.page {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: clamp(2rem, 5vw, 3.5rem);
+  padding: clamp(1.75rem, 4vw, 3rem);
   box-shadow: 0 4px 24px rgba(60,50,30,0.04);
 }
 
@@ -226,8 +226,6 @@ article.post, article.page {
 
 /* ---- 一切皆压缩 · 终稿 专用样式 (scoped to .essay-compress) ---- */
 .essay-compress {
-  --e-bg: #f6f0e6;
-  --e-card: #fffbf4;
   --e-ink: #2b211a;
   --e-ink-soft: #7d6b5a;
   --e-accent: #b56b45;
@@ -237,31 +235,26 @@ article.post, article.page {
   --e-serif: "Noto Serif SC", "Songti SC", "STSong", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
   --e-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 
-  background:
-    radial-gradient(circle at 20% 0%, rgba(181,107,69,0.05) 0%, transparent 42%),
-    radial-gradient(circle at 80% 100%, rgba(110,138,106,0.05) 0%, transparent 42%),
-    var(--e-bg);
+  background: transparent;
   color: var(--e-ink);
   font-family: var(--e-serif);
   line-height: 2;
   font-size: 17px;
-  padding: clamp(28px, 6vw, 56px) clamp(14px, 4vw, 40px);
-  border-radius: 20px;
-  margin: 0 0 2rem;
-  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .essay-compress * { box-sizing: border-box; }
 
 .essay-compress .page {
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 /* masthead */
 .essay-compress .masthead {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
   position: relative;
 }
 .essay-compress .masthead::after {
@@ -290,28 +283,13 @@ article.post, article.page {
   font-style: italic;
 }
 
-/* article card */
+/* article body */
 .essay-compress article {
-  background: var(--e-card);
-  border: 1px solid var(--e-line);
-  border-radius: 18px;
-  padding: clamp(30px, 6vw, 56px);
-  box-shadow:
-    0 1px 1px rgba(90,70,40,0.03),
-    0 8px 28px rgba(90,70,40,0.06);
-  position: relative;
-}
-
-.essay-compress article::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 24px;
-  right: 24px;
-  height: 30px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.02), transparent);
-  border-radius: 12px 12px 0 0;
-  pointer-events: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .essay-compress article > p:first-of-type { margin-top: 0; }
@@ -384,7 +362,7 @@ article.post, article.page {
 
 /* loop cards */
 .essay-compress .loop {
-  background: #fdf8f0;
+  background: rgba(181, 107, 69, 0.05);
   border: 1px solid var(--e-line);
   border-left: 4px solid var(--e-green);
   border-radius: 12px;
@@ -437,10 +415,10 @@ article.post, article.page {
 .essay-compress ::selection { background: rgba(181, 107, 69, 0.16); }
 
 @media (max-width: 600px) {
-  .essay-compress { font-size: 16px; border-radius: 14px; }
-  .essay-compress article { border-radius: 14px; padding: 24px 20px; }
+  .essay-compress { font-size: 16px; }
   .essay-compress .kicker { letter-spacing: 0.2em; }
   .essay-compress h2 { font-size: 1.15rem; gap: 0.45em; }
+  .essay-compress .masthead { margin-bottom: 26px; }
 }
 
 /* ---- small screen global ---- */
