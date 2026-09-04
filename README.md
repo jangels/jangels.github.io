@@ -1,6 +1,6 @@
 # jangels.github.io
 
-Personal site of **liuzhenhua (jangels)** — _You Shaper = Philosophy + Art + Architect_.
+Personal site of **shapefire (jangels)** — _You Shaper = Philosophy + Art + Architect_.
 
 Built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
