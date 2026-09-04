@@ -6,7 +6,10 @@
   --accent-light: #d99e7a;
   --line: #e3ded5;
   --card: #fffdf9;
-  --max: 900px;
+  /* 正文行宽：去掉卡片内边距后约 660px，≈ 38 个汉字/行
+     业界最佳实践：英文 45–75 字符（Bringhurst 建议 66），WCAG AAA 上限 80；
+     汉字信息密度高，中文正文舒适区为 30–42 字/行，取中位偏上 */
+  --max: 760px;
   --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   --serif: "Noto Serif SC", "Songti SC", "STSong", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
