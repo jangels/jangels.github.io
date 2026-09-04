@@ -95,3 +95,96 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+/* ---- 一切皆压缩 · 终稿 专用样式 (scoped to .essay-compress) ---- */
+.essay-compress {
+  --e-bg: #FBF3E7;
+  --e-card: #FFF9F1;
+  --e-ink: #31251B;
+  --e-ink-soft: #8B7662;
+  --e-accent: #C96F3D;
+  --e-green: #7E9F7A;
+  --e-line: #E8DAC6;
+  --e-serif: "Noto Serif SC", "Songti SC", "SimSun", Georgia, "Times New Roman", serif;
+  --e-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  background: var(--e-bg);
+  color: var(--e-ink);
+  font-family: var(--e-serif);
+  line-height: 1.95;
+  font-size: 17px;
+  padding: 32px 16px 56px;
+  border-radius: 16px;
+  margin: 1rem 0 2rem;
+}
+.essay-compress * { box-sizing: border-box; }
+.essay-compress .page { max-width: 720px; margin: 0 auto; }
+.essay-compress .kicker {
+  font-family: var(--e-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.28em;
+  color: var(--e-accent);
+  margin: 0 0 14px;
+  text-align: center;
+}
+.essay-compress .subtitle {
+  color: var(--e-ink-soft);
+  font-size: 14.5px;
+  margin: 0 0 8px;
+  text-align: center;
+  font-family: var(--e-sans);
+  letter-spacing: 0.04em;
+}
+.essay-compress article {
+  background: var(--e-card);
+  border: 1px solid var(--e-line);
+  border-radius: 16px;
+  padding: clamp(26px, 5vw, 48px);
+  box-shadow: 0 6px 24px rgba(120, 90, 50, 0.07);
+}
+.essay-compress article > p:first-of-type { margin-top: 0; }
+.essay-compress h2 {
+  font-size: 21px;
+  margin: 2.2em 0 0.8em;
+  padding-left: 12px;
+  border-left: 4px solid var(--e-accent);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.essay-compress h2:first-of-type { margin-top: 0.4em; }
+.essay-compress p { margin: 1.05em 0; }
+.essay-compress strong { color: var(--e-accent); font-weight: 700; }
+.essay-compress .lead { font-size: 17.5px; }
+.essay-compress .loop {
+  background: var(--e-bg);
+  border: 1px solid var(--e-line);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 14px 0;
+}
+.essay-compress .loop b {
+  font-family: var(--e-sans);
+  color: var(--e-green);
+  font-size: 14.5px;
+  letter-spacing: 0.06em;
+}
+.essay-compress .loop p { margin: 6px 0 0; font-size: 16px; }
+.essay-compress .closing {
+  margin-top: 2.4em;
+  padding-top: 1.6em;
+  border-top: 1px dashed var(--e-line);
+}
+.essay-compress .signoff {
+  text-align: right;
+  color: var(--e-ink-soft);
+  font-family: var(--e-sans);
+  font-size: 13.5px;
+  margin-top: 2em;
+}
+.essay-compress a { color: var(--e-accent); }
+.essay-compress ::selection { background: rgba(201, 111, 61, 0.18); }
+
+@media (max-width: 480px) {
+  .essay-compress { font-size: 16px; padding: 24px 12px 40px; }
+  .essay-compress article { border-radius: 12px; }
+}
