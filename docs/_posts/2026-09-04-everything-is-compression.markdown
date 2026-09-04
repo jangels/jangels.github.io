@@ -7,8 +7,10 @@ categories: essay
 
 <div class="essay-compress">
   <div class="page">
-    <p class="kicker">TALK FLOW · 口播稿</p>
-    <p class="subtitle">《一切皆语言》终稿修订版 · 2026-09-04</p>
+    <div class="masthead">
+      <p class="kicker">TALK FLOW · 口播稿</p>
+      <p class="subtitle">《一切皆语言》终稿修订版 · 2026-09-04</p>
+    </div>
 
     <article>
       <p class="lead">前几天看了《她在此沉默中》，散场之后脑子里一直转。我之前写过一篇《一切皆语言》，今天回头看，话说太满了——"一切"这种词，等于什么都没定义。今天把它拧紧：<strong>不是一切皆语言，是一切皆压缩。</strong></p>
