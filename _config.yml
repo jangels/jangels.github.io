@@ -6,6 +6,7 @@ url: "https://jangels.github.io"
 # Build settings: plain Jekyll, no external theme gem / no plugins.
 # This guarantees a successful GitHub Pages build (Jekyll 3.10 on their side).
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
 
 # Don't publish the repo README as a site page (we use index.md as home).
 exclude:
