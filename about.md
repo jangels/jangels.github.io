@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About me
 
-I'm **liuzhenhua**, also known as **jangels**. My guiding idea is
+I'm **shapefire**, also known as **jangels**. My guiding idea is
 **You Shaper = Philosophy + Art + Architect** — the belief that we shape
 ourselves through philosophy, art, and the discipline of building.
 
